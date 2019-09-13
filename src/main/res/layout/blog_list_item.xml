@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/holo_blue_light"
+    android:clipToPadding="false"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp">
+
+
+    <Button
+        android:id="@+id/item_action_like"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:background="@mipmap/action_like"
+        android:ellipsize="none"
+        android:focusable="auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_text" />
+
+    <TextView
+        android:id="@+id/item_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/item_action_like"
+        app:layout_constraintStart_toEndOf="@+id/item_action_like"
+        app:layout_constraintTop_toTopOf="@+id/item_action_like" />
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:fadeScrollbars="true"
+        android:isScrollContainer="false"
+        android:keepScreenOn="false"
+        android:maxHeight="300dp"
+        android:minWidth="150dp"
+        android:minHeight="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+           android:text="В один прекрасный день над Землей нависли огромные звездолеты инопланетян, и людям объявили, что их родная планета подлежит сносу, а на ее месте будет проложено шикарное межзвездное шоссе. Н-да, не повезло человечеству. Кроме самого заурядного парня по имени Артур Дент, старый друг и собутыльник которого Форд Префект оказался… инопланетянином!"
+        android:textAlignment="viewStart"
+        android:textColor="@color/background_holo_light"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:autoSizeMaxTextSize="24dp"
+        app:autoSizeMinTextSize="16dp"
+        app:autoSizeStepGranularity="2dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_description" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:background="@color/holo_blue_light"
+        android:paddingStart="@dimen/padding_large"
+        android:paddingEnd="@dimen/padding_large"
+        android:text="Description for the post"
+        android:textAlignment="textStart"
+        android:textColor="@color/background_holo_light"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:autoSizeMaxTextSize="24dp"
+        app:autoSizeMinTextSize="16dp"
+        app:autoSizeStepGranularity="2dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/holo_blue_light"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/main_padding"
+        android:text="@string/TitleName"
+        android:textColor="@color/background_holo_light"
+        android:textSize="32sp"
+        app:autoSizeMaxTextSize="60sp"
+        app:autoSizeMinTextSize="32sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_image" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/holo_blue_light"
+        android:text="asdasd"
+        android:textColor="@color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/item_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/holo_blue_light"
+        android:text="UserName"
+        android:textColor="@color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

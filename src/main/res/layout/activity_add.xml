@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_blue_dark"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:fadeScrollbars="true"
+                android:isScrollContainer="false"
+                android:keepScreenOn="false"
+                android:maxHeight="300dp"
+                android:minWidth="150dp"
+                android:minHeight="150dp"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/addtoolbar"
+                tools:srcCompat="@drawable/example" />
+
+            <EditText
+                android:id="@+id/add_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="72dp"
+                android:background="@color/holo_blue_light"
+                android:ems="10"
+                android:hint="@string/title_help"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/main_padding"
+                android:textAlignment="viewStart"
+                android:textColor="@color/background_holo_light"
+                android:textColorHint="@color/bright_foreground_disabled_holo_light"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/add_image"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/add_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@color/holo_blue_light"
+                android:ems="10"
+                android:hint="@string/discription_hint"
+                android:inputType="textPersonName"
+                android:maxLength="90"
+                android:maxLines="1"
+                android:padding="@dimen/main_padding"
+                android:textAlignment="textStart"
+                android:textColor="@color/background_holo_light"
+                android:textColorHint="@color/bright_foreground_disabled_holo_light"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_title" />
+
+            <EditText
+                android:id="@+id/add_text"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:autoLink="all"
+                android:backgroundTint="@color/bright_foreground_disabled_holo_light"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="@string/add_text_hint"
+                android:inputType="textMultiLine"
+                android:lines="30"
+                android:maxLines="30"
+                android:minLines="1"
+                android:padding="@dimen/main_padding"
+
+                android:scrollbars="none"
+                android:textColor="@color/background_holo_light"
+                android:textColorHint="@color/background_holo_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_image_btn" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/addtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/holo_blue_light"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/add_image_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/holo_red_light"
+                android:padding="@dimen/main_padding"
+                android:text="@string/add_image_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_image" />
+
+            <Button
+                android:id="@+id/add_confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/holo_red_light"
+                android:padding="@dimen/main_padding"
+                android:text="@string/add_confirm_text"
+                android:layout_marginBottom="@dimen/padding_large"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

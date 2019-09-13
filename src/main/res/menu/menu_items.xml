@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Action_add_btn"
+        android:icon="@mipmap/action_add"
+        android:title="@string/Action_settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/Action_logout_btn"
+        android:title="@string/Action_logout" />
+</menu>

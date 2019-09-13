@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LogoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00000000"
+        android:ellipsize="none"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/background_holo_light"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="64sp"
+        app:autoSizeMinTextSize="20sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="@string/TitleName"
+        android:textColor="@color/background_holo_light"
+        app:autoSizeMaxTextSize="38sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/LoginEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="no"
+
+        android:ems="10"
+        android:hint="@string/Login_hint"
+        android:inputType="textPersonName"
+        android:padding="@dimen/main_padding"
+        android:backgroundTint="@color/background_holo_light"
+        android:textColor="@color/background_holo_light"
+        android:textColorHint="@color/dim_foreground_disabled_holo_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoLabel" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/background_light"
+        android:background="@color/holo_red_light"
+        android:text="@string/Login"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEdit" />
+
+    <EditText
+        android:id="@+id/PasswordEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="no"
+        android:backgroundTint="@color/background_holo_light"
+        android:ems="10"
+        android:hint="@string/Password_hint"
+        android:inputType="textPassword"
+        android:padding="@dimen/main_padding"
+        android:textColor="@color/background_holo_light"
+        android:textColorHint="@color/dim_foreground_disabled_holo_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginEdit" />
+
+    <Button
+        android:id="@+id/ToCreateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_blue_dark"
+        android:padding="@dimen/main_padding"
+        android:text="@string/ButtonNewAccount"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/dim_foreground_holo_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
+        app:layout_constraintVertical_bias="0.219" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
